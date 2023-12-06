@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>FIT2102 A1 2023</title>
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/mrs-kichinto');
+    </style>
+  </head>
+  <body>
+    <h1>Tetris</h1>
+    <main id="main" class="flex row">
+      <svg id="svgCanvas">
+        <!-- game over text box -->
+        <g id="gameOver" visibility="hidden">
+          <rect x="26" y="120" opacity="0" height="48" width="149"></rect>
+          <text x="36" y="150" fill="white">Game Over</text>
+        </g>
+      </svg>
+      <div id="sideBar" class="flex col">
+        <svg id="svgPreview"></svg>
+        <div id="info" class="flex col">
+          <div class="text">
+            <span class="left">Level: </span>
+            <span class="right" id="levelText">...</span>
+          </div>
+          <div class="text">
+            <span class="left">Score: </span>
+            <span class="right" id="scoreText">...</span>
+          </div>
+          <div class="text">
+            <span class="left">Highscore: </span>
+            <span class="right" id="highScoreText">...</span>
+          </div>
+          <div class="text">
+            <span class="left" id="instruction1">W, A, S, D to move</span>
+          </div>
+          <div class="text">
+            <span class="left" id="instruction2">Q, E to rotate</span>
+          </div>
+          <div class="text">
+            <span class="left" id="instruction3">Spacebar to drop</span>
+          </div>
+          <div class="text">
+            <span class="left" id="instruction4">R to restart from game over</span>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

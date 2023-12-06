@@ -1,0 +1,115 @@
+:root {
+  background-image: url(space.png);
+  background-color: rgba(25, 3, 66, 0.863);
+  padding: 2em;
+  padding-top: 4em;
+}
+
+BODY,
+H2,
+H3,
+H4,
+H5,
+H6,
+TH,
+TD {
+  font-family: 'Mrs Kichinto', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: "space.png"
+}
+
+H1 {
+  font-size: 3em;
+  font-family: 'Mrs Kichinto', sans-serif;
+  font-weight: bolder;
+  background-image: linear-gradient(to bottom right, rgba(25, 3, 66, 0.863), rgba(152, 137, 180, 0.863));
+  border-radius: 0.05em;
+  padding: 0.3em 0.5em 0.1em 0.5em;
+  box-shadow: 0em 0em 0.15em rgb(243, 243, 242);
+  text-shadow: 0em 0em 1px rgb(243, 235, 235);
+}
+
+.flex {
+  display: flex;
+  row-gap: 1em;
+  column-gap: 1em;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+main {
+  background-color: rgba(132, 88, 214, 0.2);
+  border-radius: 0.25em;
+  box-shadow: 0em 0em 0.5em rgb(255, 255, 255);
+  flex-wrap: wrap;
+  padding: 1em;
+  max-width: 400px;
+}
+
+svg {
+  border-radius: 0.1em;
+  border: 5px solid rgb(8, 8, 8);
+}
+
+svg rect {
+  stroke: rgba(29, 25, 25, 0.925);
+  stroke-width: 2px;
+}
+
+#background {
+  background-image: "space.png";
+}
+
+#svgCanvas {
+  background-color: rgb(20, 19, 19);
+}
+
+#svgPreview {
+  background-color: rgb(20, 19, 19);
+}
+
+#info {
+  width: 160px;
+  margin-top: 1em;
+}
+
+#info > .text {
+  font-weight: bold;
+  color: rgb(241, 241, 241);
+}
+
+#instruction1,
+#instruction2,
+#instruction3,
+#instruction4 {
+  font-weight: normal;
+}
+
+.left {
+  font-size: 1.1em;
+  float: left;
+}
+
+.right {
+  font-size: 1em;
+  float: right;
+}
+
+#gameOver {
+  font-size: 1.8em;
+  font-weight: bolder;
+  text-align: center;
+}
+
