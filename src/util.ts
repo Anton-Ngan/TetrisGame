@@ -2,8 +2,6 @@
 export { attr, isNotNullOrUndefined, RNG, not }
 
 /**
- * Note: taken and modified from Week 4 Tutes
- * 
  * A random number generator which provides two pure functions
  * `hash` and `scaleToRange`.  Call `hash` repeatedly to generate the
  * sequence of hashes.
@@ -28,8 +26,6 @@ abstract class RNG {
 }
 
 /**
- * Note: taken from FRP asteroids code
- * 
  * Composable not: invert boolean result of given function
  * @param f a function returning boolean
  * @param x the value that will be tested with f
@@ -37,8 +33,6 @@ abstract class RNG {
 const not = <T>(f: (x: T) => boolean) => (x: T) => !f(x)
 
 /**
- * Note: taken from FRP asteroids code
- * 
  * set a number of attributes on an Element at once
  * @param e the Element
  * @param o a property bag
@@ -46,8 +40,6 @@ const not = <T>(f: (x: T) => boolean) => (x: T) => !f(x)
 const attr = (e: Element, o: { [p: string]: unknown }) => { for (const k in o) e.setAttribute(k, String(o[k])) }
 
 /**
- * Note: taken from FRP asteroids code
- * 
  * Type guard for use in filters
  * @param input something that might be null or undefined
  */
