@@ -12,8 +12,6 @@ import { RNG } from './util';
 export function main() {
 
   /**
-  * Note: taken from Week 4 tutes
-  * 
   * Converts values in a stream to random numbers in the range [0, 1]
   *
   * @param source$ The source Observable, elements of this are replaced with random numbers
